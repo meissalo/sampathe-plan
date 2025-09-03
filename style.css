@@ -361,3 +361,65 @@ p {
 body, p, li, .lead, .objectifs-list li, .conclusion-list li, .card p, .kpi small {
   color: #05090c; /* noir profond pour une meilleure lisibilité */
 }
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Media query pour mobile */
+@media (max-width: 768px) {
+  .cols-2,
+  .cols-3 {
+    grid-template-columns: 1fr; /* une seule colonne */
+  }
+  
+  .wrap {
+    padding: 20px 10px; /* réduire les paddings */
+  }
+  
+  .kpis {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .kpi {
+    flex: 1 1 100%;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .navlinks {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navlinks a {
+    padding: 10px 0;
+  }
+}
+.hero-art, .hero-art .orb {
+  max-width: 100%;
+  height: auto;
+}
