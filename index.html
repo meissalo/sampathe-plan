@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SAMPATHE – Plan de Développement : site moderne HTML/CSS/JS à partager avec le quartier." />
+  <title>SAMPATHE • Plan de Développement</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    /* Styles spécifiques pour les contenus toggle */
+    .axe-content, .step-content, .indicator-content { display: none; padding: 0.5rem 1rem; border-radius: 6px; margin-top: 0.5rem; background: #e7e2e2; }
+    .step-content.active { display: block; }
+    .card.step { margin-bottom: 1rem; border: 1px solid #d9dbe6; border-radius: 8px; padding: 1rem; background: #0f0f0f; }
+    .toggle-link, .toggle-btn, .indicator-btn { cursor: pointer; font-weight: bold; margin-top: 0.5rem; display: inline-block; color: #121412; text-decoration: none; }
+    .toggle-link:hover, .toggle-btn:hover, .indicator-btn:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <a class="brand" href="#top">
+      <!-- Logo inséré -->
+      <img src="logo.png" alt="Logo Sampathé" class="logo" />
+      <h1>SAMPATHE • Plan de Développement</h1>
+    </a>
+    <div class="navlinks">
+      <a href="#intro">A propos</a>
+      <a href="#contexte">Contexte</a>
+      <a href="#objectifs">Objectifs</a>
+      <a href="#axes">Axes</a>
+      <a href="#gestion">Gestion</a>
+      <a href="#strategie">Stratégie</a>
+      <a href="#indicateurs">Indicateurs</a>
+      <a href="#conclusion">Conclusion</a>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="reveal">
+      <h2>Un plan ambitieux pour un <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent">quartier durable</span></h2>
+      <p>Cette plateforme présente la vision, les objectifs, les axes prioritaires et la stratégie de mise en œuvre du <strong>Plan de Développement de SAMPATHE</strong>. Partagez-la au sein du quartier et contribuez à la réussite collective.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#axes">Découvrir les axes</a>
+        <a class="btn btn-ghost" href="#objectifs">Voir les objectifs</a>
+      </div>
+    </div>
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="orb" style="left:55%; top:35%"></div>
+      <div class="orb b"></div>
+      <div class="orb c"></div>
+    </div>
+  </main>
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+  <!-- Introduction -->
+  <section id="intro" class="wrap">
+    <h2 class="section-title reveal">A propos</h2>
+    <p class="lead reveal">Le quartier de Sampathé, situé dans la commune de Thiès-Est une zone dynamique 
+        avec une croissance urbaine constante, il fait face à des défis liés à l’aménagement du 
+        territoire et le pavage des voiries, le drainage des eaux pluviales, à l’intégration sociale 
+        des jeunes, l’autonomisation des femmes, à la gestion environnementale et à 
+        l’amélioration des infrastructures. Conscient de ces enjeux, ce plan de développement 
+        vise à proposer une vision globale et inclusive pour transformer Sampathé en un 
+        quartier moderne, durable et attractif. 
+        En intégrant des espaces dédiés à la jeunesse, la mise en place d’un éco-quartier, le 
+        pavage des voies principales, ainsi qu’une gestion responsable de l’environnement, ce 
+        plan ambitionne de répondre aux besoins actuels des habitants tout en anticipant les 
+        exigences futures d’un développement harmonieux. 
+        Ce document servira de feuille de route pour les autorités locales, les partenaires 
+        techniques et financiers, ainsi que pour la communauté, en vue d’une transformation 
+        progressive mais cohérente du cadre de vie à Sampathé.</p>
+    <div class="grid cols-2">
+      <div class="card reveal">
+        <h3>Vision</h3>
+        <p>Bâtir un quartier résilient, solidaire et prospère où chaque habitant accède à un environnement sain, des services de qualité et des opportunités.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Approche</h3>
+        <p>Concertation communautaire, partenariats, innovation locale et suivi-évaluation continus pour une mise en œuvre efficace.</p>
+      </div>
+    </div>
+  </section>
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+  <!-- Contexte et justification -->
+  <!-- Contexte et justification -->
+<section id="contexte" class="wrap">
+  <h2 class="section-title reveal">Contexte et justification</h2>
+  <p class="lead reveal">
+    Le quartier de Sampathé connaît une croissance démographique rapide, accompagnée 
+    de défis majeurs tels que le manque d’espaces publics, la dégradation de 
+    l’environnement, l’absence de voiries pavées, et un déficit d’infrastructures et de 
+    formation pour les jeunes et les femmes. Face à ces enjeux, ce plan vise à impulser un 
+    développement intégré et durable.
+  </p>
+
+  <div class="grid cols-3">
+    <div class="card reveal">
+      <h3>Localisation et caractéristiques socio-économiques</h3>
+      <p>
+        • Quartier : Thiès-Est <br>
+        • Population : 22 000 habitants environ (dont 55 % de moins de 35 ans) <br>
+        • Niveau de vie : Faible à moyen, fort besoin en insertion professionnelle et en 
+        services de base <br>
+        • Enjeux principaux : chômage des jeunes, fragilité du pouvoir d’achat des 
+        femmes, accès limité aux soins, dégradation du cadre de vie
+      </p>
+    </div>
+    <div class="card reveal">
+      <h3>Diagnostic participatif</h3>
+      <p>
+        • Ateliers de concertation avec les comités de jeunes, de femmes et les autorités 
+        communales <br>
+        • Recueil des besoins prioritaires : formation professionnelle, financement local, 
+        sanitaires, espaces collectifs, sport/culture
+      </p>
+    </div>
+    <div class="card reveal">
+      <h3>Opportunités</h3>
+      <p>
+        Jeunesse dynamique, potentiel d’écoquartier, mutualisation des ressources.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+
+  <!-- Objectifs du plan -->
+  <section id="objectifs" class="wrap">
+  <h2 class="section-title reveal">Objectifs du plan</h2>
+
+  <!-- Vision -->
+  <div class="card reveal">
+    <h3>Vision</h3>
+    <p class="lead">
+      « Un quartier solidaire, durable et innovant, où chaque jeune et chaque femme 
+      trouve les moyens de créer son activité, où la santé et la cohésion sociale sont 
+      garanties, et où l’environnement et la culture irriguent le quotidien ».
+    </p>
+  </div>
+
+  <!-- Objectifs détaillés -->
+  <div class="card reveal">
+    <h3>Objectifs spécifiques</h3>
+    <ul class="lead objectifs-list">
+      <li>Autonomisation économique de <strong>800 jeunes</strong> et <strong>600 femmes</strong></li>
+      <li>Création et pérennisation de mutuelles d’épargne-crédit et de santé couvrant au moins <strong>3 000 adhérents</strong></li>
+      <li>Amélioration du cadre de vie avec <strong>5 000 m² d’espaces verts</strong> et <strong>2 km de voirie pavée</strong></li>
+      <li>Créer un éco-quartier modèle, respectueux de l’environnement</li>
+      <li>Offrir aux jeunes des espaces adaptés à leur épanouissement</li>
+      <li>Renforcer les infrastructures et les équipements publics de base</li>
+      <li>Soutien scolaire pour <strong>500 élèves et étudiants</strong></li>
+    </ul>
+  </div>
+
+  <!-- Résumé -->
+  <div class="card reveal">
+    <p class="lead">
+      Nous visons à transformer le quartier Sampathé en un cadre de vie durable, inclusif 
+      et attrayant à travers une approche intégrée combinant urbanisme, inclusion sociale, 
+      et préservation de l’environnement.
+    </p>
+  </div>
+
+  <!-- Indicateurs synthétiques en icônes -->
+  <div class="kpis reveal">
+    <div class="kpi"><div class="icon">✔︎</div><small>Améliorer le cadre de vie</small></div>
+    <div class="kpi"><div class="icon">✔︎</div><small>Renforcer la cohésion sociale</small></div>
+    <div class="kpi"><div class="icon">✔︎</div><small>Favoriser l’emploi & formation</small></div>
+    <div class="kpi"><div class="icon">✔︎</div><small>Promouvoir la santé & sécurité</small></div>
+  </div>
+</section>
+
+<style>
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+}
+
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c1230;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #00aaff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.card {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: #007acc;
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.objectifs-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.kpis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.kpi {
+  background: #00aaff10;
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: center;
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.kpi:hover {
+  background: #00aaff20;
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 20px;
+  color: #00aaff;
+}
+</style>
+
+
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+  <!-- Axes stratégiques -->
+  <section id="axes" class="wrap"> 
+  <div class="tag reveal"><h2>Axes stratégiques & actions prioritaires</h2></div>
+  <p class="lead reveal">Neuf axes structurants, portés par la communauté, pour transformer durablement le quartier.</p>
+
+  <div class="axes">
+
+    <!-- Axe 1 -->
+    <article class="card axe reveal">
+      <h3>🌱 Écoquartier & développement durable</h3>
+      <p>Gestion des déchets, verdissement, énergie propre, eau et assainissement.</p>
+      <button class="toggle-btn">📖 Lire la suite</button>
+      <div class="axe-content">
+        <p>
+          Face aux défis environnementaux, sociaux et économiques actuels, le quartier Sampathé,
+          situé dans la commune de Thiès-Est, entend amorcer une transition vers un modèle
+          d’habitat durable, solidaire et résilient. 
+        </p>
+        <ul>
+          <li>Gestion durable des ressources (eau, énergie, déchets)</li>
+          <li>Mobilité douce et accessible</li>
+          <li>Constructions éco-responsables</li>
+          <li>Espaces verts communautaires et jardins partagés</li>
+          <li>Programme de sensibilisation écologique</li>
+        </ul>
+        <p><em>Objectif : rendre le quartier résilient, vert et respectueux de l’environnement.</em></p>
+      </div>
+    </article>
+
+    <!-- Axe 2 -->
+   <article class="card axe reveal">
+  <h3>👩🏽‍🎓 Espace jeune</h3>
+  <p>Centre d’initiation numérique, coworking, orientation, accompagnement projets.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p style="text-align: justify;">
+      L’axe « Espace Jeune » vise à offrir aux jeunes de Sampathé un cadre moderne et inclusif 
+      pour leur formation, leur créativité et leur insertion professionnelle. 
+    </p>
+    <h4>Objectifs principaux :</h4>
+    <ul>
+      <li>Créer un <strong>centre d’initiation numérique</strong> équipé d’ordinateurs et d’internet.</li>
+      <li>Mettre en place un <strong>espace de coworking</strong> pour encourager l’innovation et le partage.</li>
+      <li>Offrir des <strong>formations en TIC, entrepreneuriat et métiers pratiques</strong>.</li>
+      <li>Développer un <strong>service d’orientation et d’accompagnement des projets</strong> des jeunes.</li>
+      <li>Favoriser la <strong>participation citoyenne et culturelle</strong> à travers des ateliers et événements.</li>
+    </ul>
+    <p style="text-align: justify;">
+      <em>Impact attendu :</em> Un espace fédérateur où les jeunes peuvent apprendre, entreprendre et 
+      contribuer au développement local, réduisant ainsi le chômage et renforçant la cohésion sociale.
+    </p>
+  </div>
+</article>
+
+
+    <!-- Exemple pour un autre axe -->
+   <article class="card axe reveal">
+  <h3>🧱 Voiries & pavage durable</h3>
+  <p>Réhabilitation des routes, drainage, accessibilité et emploi local.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Le programme vise à améliorer la mobilité, l’assainissement et l’esthétique du quartier à travers un pavage durable et participatif.
+    </p>
+    <ul>
+      <li>Pavage des axes prioritaires (écoles, services publics, marchés)</li>
+      <li>Caniveaux & drainage pluvial</li>
+      <li>Formation et implication des jeunes (chantier-école)</li>
+    </ul>
+  </div>
+</article>
+
+<article class="card axe reveal">
+  <h3>🏡 Aménagement & cadre de vie</h3>
+  <p>Environnement propre, espaces verts, gestion durable des déchets et mobilisation citoyenne.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Le programme vise à améliorer la qualité de vie à Sampathé par une meilleure gestion de l’environnement, la propreté urbaine et la création d’espaces verts, avec une forte implication communautaire.
+    </p>
+    <ul>
+      <li>Journées mensuelles « Set Setal » (nettoyage collectif)</li>
+      <li>Points de collecte et tri des déchets</li>
+      <li>Création d’espaces verts & jardins communautaires</li>
+      <li>Éducation environnementale (écoles & ménages)</li>
+      <li>Formation de 15 membres en gestion communautaire</li>
+    </ul>
+  </div>
+</article>
+
+<article class="card axe reveal">
+  <h3>🛡️ Sécurité & bien-être</h3>
+  <p>Éclairage public, prévention, comités de veille et coopération avec les forces de sécurité.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Le programme vise à renforcer la tranquillité publique et la cohésion sociale en 
+      luttant contre l’insécurité, la délinquance et l’occupation anarchique des espaces.
+      La sécurité est pensée comme une responsabilité partagée entre habitants, autorités 
+      et partenaires.
+    </p>
+    <ul>
+      <li>Installation de lampadaires solaires dans les zones sensibles</li>
+      <li>Aménagement & sécurisation des espaces publics</li>
+      <li>Création d’un comité local de sécurité communautaire</li>
+      <li>Campagnes de sensibilisation (écoles, familles, jeunes)</li>
+      <li>Renforcement des liens avec les forces de sécurité</li>
+    </ul>
+  </div>
+</article>
+<article class="card axe reveal">
+  <h3>🛠️ Formation & autonomisation</h3>
+  <p>Formations pratiques, entrepreneuriat féminin, inclusion économique et création d’emplois locaux.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Ce programme renforce les compétences des femmes et des jeunes afin de favoriser leur 
+      autonomie économique, la création d’activités génératrices de revenus et la cohésion 
+      sociale. Il constitue un levier contre la pauvreté et pour l’équité.
+    </p>
+    <ul>
+      <li>Formations en transformation alimentaire & saponification</li>
+      <li>Modules de gestion, marketing local & digitalisation</li>
+      <li>Création de coopératives et GIE féminins</li>
+      <li>Appui via une mutuelle d’épargne & de crédit solidaire</li>
+      <li>Objectif : 800 bénéficiaires formés en 3 ans</li>
+    </ul>
+  </div>
+</article>
+<article class="card axe reveal">
+  <h3>🤝 Mutuelle d’épargne & santé</h3>
+  <p>Inclusion financière, microcrédit solidaire et accès aux soins pour tous.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Ce programme favorise l’autonomie économique et la protection sociale des habitants 
+      de Sampathé grâce à une mutuelle d’épargne-crédit et une mutuelle de santé solidaire. 
+      Il combine microfinance, formation et couverture médicale pour un développement inclusif.
+    </p>
+    <ul>
+      <li>Mutuelle d’épargne solidaire (MESS) : microcrédits 25 000–200 000 FCFA, épargne obligatoire</li>
+      <li>Mutuelle de santé (M3S) : forfait annuel 5 000 FCFA/famille, consultations et soins de base</li>
+      <li>Gouvernance participative avec comité de gestion et assemblée générale</li>
+      <li>Formation en gestion financière et suivi des projets financés</li>
+      <li>Objectifs 3 ans : 1 500 membres épargne, 700 crédits, 1 000 familles santé</li>
+      <li>Synergie entre micro-activités financées et cotisations santé pour renforcer l’inclusion</li>
+    </ul>
+  </div>
+</article>
+<article class="card axe reveal">
+  <h3>⚽ Sport & culture</h3>
+  <p>Développement des talents, infrastructures sportives et activités culturelles.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Le programme vise à faire du sport et de la culture des leviers de développement social, 
+      de cohésion communautaire et de prévention des déviances dans le quartier Sampathé.
+    </p>
+    <ul>
+      <li>Réhabilitation et création d’infrastructures : terrain multisports, aire de jeux, maison de la culture</li>
+      <li>Organisation d’activités sportives régulières et festivals culturels</li>
+      <li>Encadrement des jeunes par des professionnels</li>
+      <li>Promotion de l’égalité d’accès, notamment pour les filles</li>
+      <li>Accompagnement au développement physique, moral et artistique</li>
+      <li>Préservation et valorisation de la culture locale</li>
+    </ul>
+  </div>
+</article>
+<article class="card axe reveal">
+  <h3>📚 Encadrement scolaire</h3>
+  <p>Soutien pédagogique, tutorat, bibliothèque et accompagnement scolaire.</p>
+  <button class="toggle-btn">📖 Lire la suite</button>
+  <div class="axe-content">
+    <p>
+      Le programme vise à améliorer les performances scolaires et réduire le décrochage 
+      des élèves du quartier Sampathé grâce à un encadrement structuré et inclusif.
+    </p>
+    <ul>
+      <li>Cours de renforcement gratuits et tutorat assuré par 20 étudiants bénévoles</li>
+      <li>Bibliothèque de quartier avec 1 200 ouvrages et cyber-espace (10 postes informatiques)</li>
+      <li>Soutien matériel : kits scolaires pour 300 élèves et 100 bourses mensuelles</li>
+      <li>Accompagnement des élèves du primaire au lycée, y compris parcours universitaire</li>
+      <li>Création d’un cadre propice à l’apprentissage et à la réussite</li>
+    </ul>
+  </div>
+</article>
+
+    <!-- ⚠️ Tu peux dupliquer la structure ci-dessus pour les 9 axes -->
+
+  </div>
+</section>
+
+
+
+<script>
+  // Récupère tous les boutons
+  const buttons = document.querySelectorAll(".toggle-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        btn.textContent = "📖 Lire la suite";
+      } else {
+        content.style.display = "block";
+        btn.textContent = "❌ Refermer";
+      }
+    });
+  });
+</script>
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+
+  <!-- Gestion du plan -->
+  <section id="gestion" class="wrap"> 
+  <h2 class="section-title reveal">Gestion du plan de développement</h2>
+  <p class="lead reveal">
+    Assurer une gouvernance rigoureuse, participative et transparente pour la réussite du plan de développement intégré de Sampathé.
+  </p>
+  <div class="grid cols-2">
+    <div class="card reveal">
+      <h3>Comité de pilotage (COPIL)</h3>
+      <p>Représentants communautaires, élus locaux, partenaires techniques et financiers, chargés de la stratégie et des grandes orientations.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Cellule technique de coordination</h3>
+      <p>Suivi opérationnel, planification, mobilisation des ressources et liaison avec les bénéficiaires.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Commissions thématiques</h3>
+      <p>Groupes d’acteurs locaux pour chaque domaine clé : formation, mutuelles, environnement, jeunesse, sport, etc.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Consultation communautaire & communication</h3>
+      <p>Réunions trimestrielles ouvertes aux habitants, plateformes numériques, bilans semestriels et canaux de feedback.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Suivi & évaluation</h3>
+      <p>Indicateurs clairs pour chaque composante (jeunes formés, voiries aménagées, crédits octroyés…), bilans semestriels partagés.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Partenariats</h3>
+      <p>Mairie, services techniques, ONG, institutions de microfinance, établissements scolaires et universitaires, bailleurs et fondations.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+ <!-- Stratégie de mise en œuvre -->
+<section id="strategie" class="wrap">
+  <h2 class="section-title reveal">Stratégie de mise en œuvre</h2>
+  <p class="lead reveal">
+    Déroulement en étapes, priorisation des actions, mobilisation des ressources et suivi-évaluation.
+  </p>
+
+  <div class="timeline">
+
+    <!-- Phase 1 -->
+    <article class="card step reveal">
+      <h3>Phase préparatoire – Mobilisation et planification (Mois 1 à 3)</h3>
+      <a href="#" class="toggle-link">📖 Lire la suite</a>
+      <div class="step-content">
+        <ul>
+          <li>Sensibilisation communautaire : réunions avec habitants, ASC, leaders, écoles et femmes</li>
+          <li>Diagnostic participatif pour identifier besoins et ressources locales</li>
+          <li>Structuration des comités de pilotage et commissions thématiques</li>
+          <li>Élaboration des plans d’actions sectoriels (éducation, mutuelles, sport, voirie…)</li>
+          <li>Établissement du budget prévisionnel global et sectoriel</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Phase 2 -->
+    <article class="card step reveal">
+      <h3>Phase de démarrage – Mise en place des dispositifs (Mois 4 à 6)</h3>
+      <a href="#" class="toggle-link">📖 Lire la suite</a>
+      <div class="step-content">
+        <ul>
+          <li>Création administrative des structures clés : mutuelle d’épargne et de crédit, mutuelle de santé, cellule de coordination</li>
+          <li>Identification et formation des acteurs relais (animateurs jeunesse, encadreurs scolaires, gestionnaires mutuelles…)</li>
+          <li>Mobilisation de financements : subventions, partenariats, cotisations communautaires</li>
+          <li>Début des aménagements légers : espaces jeunes, plantations, débroussaillage, actions pilotes</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Phase 3 -->
+    <article class="card step reveal">
+      <h3>Phase opérationnelle – Mise en œuvre progressive (Années 1 à 3)</h3>
+      <a href="#" class="toggle-link">📖 Lire la suite</a>
+      <div class="step-content">
+        <ul>
+          <li>Lancement des programmes par volet : formation, mutuelles, écoquartier, sport & culture, cadre de vie, éducation</li>
+          <li>Organisation régulière de forums communautaires</li>
+          <li>Suivi des activités et coordination avec les bénéficiaires</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Phase 4 -->
+    <article class="card step reveal">
+      <h3>Phase de suivi-évaluation continue (Années 1 à 4)</h3>
+      <a href="#" class="toggle-link">📖 Lire la suite</a>
+      <div class="step-content">
+        <ul>
+          <li>Suivi trimestriel des indicateurs clés : bénéficiaires formés, crédits accordés, km de voirie pavée, jeunes encadrés…</li>
+          <li>Évaluation annuelle participative avec ajustements</li>
+          <li>Communication des résultats : rapports publics, publications, événements communautaires</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Phase 5 -->
+    <article class="card step reveal">
+      <h3>Phase de consolidation & autonomisation (Année 4 et +)</h3>
+      <a href="#" class="toggle-link">📖 Lire la suite</a>
+      <div class="step-content">
+        <ul>
+          <li>Transfert progressif de la gestion aux structures locales : groupements de femmes, mutuelles, ASC…</li>
+          <li>Renforcement de la durabilité financière : activités génératrices de revenus, adhésions aux mutuelles, contributions locales</li>
+          <li>Pérennisation par des politiques locales intégrées à la commune de Thiès-Est</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Script Toggle -->
+<script>
+  const toggleLinks = document.querySelectorAll(".toggle-link");
+  toggleLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const content = link.nextElementSibling;
+      content.classList.toggle("active");
+      link.textContent = content.classList.contains("active") ? "📖 Lire moins" : "📖 Lire la suite";
+    });
+  });
+</script>
+
+<style>
+  .step-content { display: none; padding: 0.5rem 1rem; background: #5e5d5d; border-radius: 6px; margin-top: 0.5rem; }
+  .step-content.active { display: block; }
+  .card.step { margin-bottom: 1rem; border: 1px solid #464a5e; border-radius: 8px; padding: 1rem; background: #0f0f0f; }
+  .toggle-link { display: inline-block; margin-top: 0.5rem; cursor: pointer; color: #17790a; text-decoration: none; font-weight: bold; }
+  .toggle-link:hover { text-decoration: underline; }
+</style>
+
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+<!-- Indicateurs de résultat -->
+<section id="indicateurs" class="wrap">
+  <h2 class="section-title reveal">Indicateurs de résultat</h2>
+  <p class="lead reveal">Mesurer les progrès pour piloter le plan et rendre compte à la population.</p>
+
+  <div class="grid cols-2">
+
+    <!-- Cadre de vie -->
+    <div class="card reveal">
+      <h3>Cadre de vie</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>% rues pavées</li>
+          <li>Nombre d’arbres plantés</li>
+          <li>Points lumineux opérationnels</li>
+          <li>Nombre de points de tri ou dépôts de déchets créés</li>
+          <li>Réduction visible des dépôts sauvages</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social & emploi -->
+    <div class="card reveal">
+      <h3>Formation & autonomisation des femmes</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Nombre de femmes formées (saponification / transformation alimentaire)</li>
+          <li>% de femmes ayant lancé une activité génératrice de revenus</li>
+          <li>Revenus moyens mensuels générés</li>
+          <li>Taux de satisfaction des bénéficiaires (enquête annuelle)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Éducation & tutorat -->
+    <div class="card reveal">
+      <h3>Encadrement scolaire & éducatif</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Nombre d’élèves et étudiants encadrés chaque année</li>
+          <li>Taux de réussite scolaire (avant/après)</li>
+          <li>Nombre de bénévoles/formateurs mobilisés</li>
+          <li>Taux de participation aux sessions de soutien et mentorat</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mutuelles d’épargne, crédit et santé -->
+    <div class="card reveal">
+      <h3>Mutuelles & santé</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Nombre de membres adhérents à la mutuelle d’épargne et de crédit</li>
+          <li>Volume total des crédits octroyés</li>
+          <li>Taux de remboursement des crédits</li>
+          <li>Nombre de bénéficiaires mutuelle santé</li>
+          <li>Fréquence d’utilisation des services de santé</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Écoquartier & environnement -->
+    <div class="card reveal">
+      <h3>Écoquartier & environnement</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Nombre d’arbres plantés</li>
+          <li>% éclairage public solaire</li>
+          <li>Nombre de points de tri ou dépôts de déchets</li>
+          <li>Réduction visible des dépôts sauvages</li>
+          <li>Campagnes de sensibilisation environnementale</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Aménagement & voiries -->
+    <div class="card reveal">
+      <h3>Aménagement & voiries</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Mètres carrés de voirie pavée/réhabilitée</li>
+          <li>Espaces publics aménagés (jeux, bancs, zones de repos)</li>
+          <li>Satisfaction des usagers</li>
+          <li>Réduction stagnation eaux / usure routes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Jeunesse, sport & culture -->
+    <div class="card reveal">
+      <h3>Jeunesse, sport & culture</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Tournois organisés : 12 (3/an)</li>
+          <li>Jeunes encadrés chaque année : 500+</li>
+          <li>Événements culturels grand public : 4/an</li>
+          <li>Clubs artistiques actifs : 5</li>
+          <li>Implication des jeunes dans initiatives communautaires</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pilotage & gouvernance -->
+    <div class="card reveal">
+      <h3>Pilotage & gouvernance</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>Réunions comité de pilotage/an</li>
+          <li>% projets exécutés selon calendrier</li>
+          <li>Niveau de mobilisation des financements planifiés</li>
+          <li>Participation communautaire aux décisions</li>
+          <li>Publication régulière rapports & budgets</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Indicateur global d’impact -->
+    <div class="card reveal">
+      <h3>Indicateur global d’impact</h3>
+      <button class="indicator-btn">Voir les détails 📊</button>
+      <div class="indicator-content">
+        <ul>
+          <li>% population ayant bénéficié du plan après 3 ans</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Script JS pour ouvrir/fermer les indicateurs -->
+<script>
+  const indicatorBtns = document.querySelectorAll('.indicator-btn');
+  indicatorBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+<!-- Styles CSS pour ces boutons -->
+<div class="section-divider">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="divider-path"></path>
+  </svg>
+</div>
+  <!-- Conclusion -->
+  <section id="conclusion" class="wrap">
+  <h2 class="section-title reveal">Conclusion</h2>
+
+  <div class="card reveal">
+    <p class="lead">
+      Le plan de développement intégré de Sampathé constitue une réponse ambitieuse, 
+      inclusive et durable aux défis économiques, sociaux, éducatifs et environnementaux 
+      que rencontre le quartier. Pensé autour des besoins réels des populations et fondé sur 
+      une approche participative, il vise à :
+    </p>
+
+    <ul class="lead conclusion-list">
+      <li>Renforcer l’autonomisation des femmes et des jeunes par la formation et l’entrepreneuriat local,</li>
+      <li>Améliorer l’accès aux services de base à travers la mise en place de mutuelles de santé et de crédit,</li>
+      <li>Valoriser l’environnement et le cadre de vie par des actions concrètes d’aménagement durable,</li>
+      <li>Encadrer la jeunesse scolaire et universitaire, pour favoriser la réussite et prévenir le décrochage,</li>
+      <li>Dynamiser la vie sociale et culturelle du quartier par des activités sportives et artistiques fédératrices,</li>
+      <li>Moderniser les infrastructures urbaines, en particulier les voiries et les espaces publics.</li>
+    </ul>
+
+    <p class="lead">
+      Ce plan, aligné avec les objectifs de développement durable (ODD), constitue une 
+      feuille de route cohérente pour faire de Sampathé un quartier pilote, exemplaire par sa 
+      résilience, sa solidarité et son engagement citoyen.
+    </p>
+
+    <p class="lead">La réussite de cette vision repose sur :</p>
+    <ul class="lead conclusion-list">
+      <li>Une gouvernance locale forte et transparente,</li>
+      <li>La mobilisation des ressources internes et externes,</li>
+      <li>Une implication active de tous les habitants.</li>
+    </ul>
+
+    <p class="lead">
+      C’est ensemble — autorités, populations, partenaires techniques et financiers — que 
+      nous bâtirons le Sampathé de demain : inclusif, vert, dynamique et prospère.
+    </p>
+  </div>
+
+  <!-- Carte pour le partage -->
+  <div class="card reveal share-card">
+    <div class="share-content">
+      <h3>Partagez le site</h3>
+      <p class="lead">Diffusez le lien sur WhatsApp, Facebook, X/Twitter, ou par e-mail.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/?text=Découvrez%20le%20site%20SAMPATHE%20-%20Plan%20de%20Développement" target="_blank" title="Partager sur WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank" title="Partager sur Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=Découvrez%20le%20site&url=https://example.com" target="_blank" title="Partager sur X/Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:?subject=Découvrez%20SAMPATHE&body=Découvrez%20le%20site%20: https://example.com" title="Partager par Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="share-buttons">
+      <button class="btn btn-primary" id="shareBtn">Partager</button>
+      <button class="btn btn-ghost" id="copyBtn">Copier le lien</button>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section Wrap */
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+}
+
+/* Titres */
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c1230;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #00aaff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cartes */
+.card {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(20, 20, 20, 0.05);
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.conclusion-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Carte Partage */
+.share-card {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #d8d3d3;
+  color: #0a0909;
+  padding: 20px;
+}
+
+.share-content {
+  max-width: 680px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #00aaff;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00aaff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #0088cc;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #0f0e0e;
+  border: 1px solid #fff;
+}
+.btn-ghost:hover {
+  background: rgba(17, 17, 17, 0.1);
+}
+</style>
+
+<script>
+// Copier le lien
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText('https://example.com').then(() => {
+    alert('Lien copié dans le presse-papiers !');
+  });
+});
+</script>
+
+
+
+  <!-- Footer -->
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Sampathe TH, Sénégal</span>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:meissalo47@gmail.com">meissalo47@gmail.com</a>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-phone"></i>
+      <span>+221 78 668 78 58</span>
+    </div>
+  </div>
+  <p class="copyright">&copy; <span id="year">2025</span> Meïssa Lô. Tous droits réservés.</p>
+</footer>
+
+<!-- Back to top -->
+<button id="toTop" aria-label="Remonter" title="Remonter">
+  ↑
+</button>
+
+
+  <script>
+    // Révélations au scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} })
+    },{root:null, rootMargin:'0px 0px -10% 0px', threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+    // Année dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Bouton remonter
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', ()=>{
+      const y = window.scrollY || document.documentElement.scrollTop;
+      toTop.style.opacity = y > 600 ? 1 : 0;
+      toTop.style.transform = y > 600 ? 'none' : 'translateY(8px)';
+    });
+    toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Partage natif + fallback
+    const shareBtn = document.getElementById('shareBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const shareData = {title: 'SAMPATHE – Plan de Développement', text: 'Découvrez le plan de développement de notre quartier.', url: location.href};
+    shareBtn.addEventListener('click', async ()=>{
+      try{
+        if(navigator.share){ await navigator.share(shareData); }
+        else{ await navigator.clipboard.writeText(location.href); alert('Lien copié !'); }
+      }catch(err){ console.warn(err); }
+    });
+    copyBtn.addEventListener('click', async ()=>{
+      try{ await navigator.clipboard.writeText(location.href); copyBtn.textContent='Copié ✓'; setTimeout(()=> copyBtn.textContent='Copier le lien', 1800);}catch(e){ alert('Copie impossible'); }
+    });
+  </script>
+</body>
+</html>
